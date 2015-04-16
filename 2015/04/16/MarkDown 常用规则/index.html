@@ -17,7 +17,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>Tag: test | Hexo</title>
+  <title>MarkDown 常用规则 | Hexo</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -84,7 +84,7 @@
 </head>
 
 <!--
-<body class="home-template">
+<body class="post-template">
 -->
 <body id="index" class="lightnav animsition">
 
@@ -112,6 +112,15 @@
             </li>
             
             
+        	<li>
+        		<a class="sb-toggle-submenu">Categories<span class="sb-caret"></span></a>
+            	<ul class="sb-submenu">
+				  	
+				    <li><a href="/categories/MarkDown/" class="animsition-link">MarkDown<small>(1)</small></a></li>
+				    
+				</ul>
+        	</li>
+			
             
             <li>
                 <a class="sb-toggle-submenu">Links<span class="sb-caret"></span></a>
@@ -221,37 +230,174 @@
 
         <!-- ============================ END Hero Image =========================== -->
       
-
-
-<section id="services">
+<section id="intro">
     <div class="container">
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                <div class="row boxes">
-                    
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/2015/04/14/my-new-post/">test</a></h4>
-                            
-                            <p><time datetime="2015-04-14T07:08:32.000Z"><a href="/2015/04/14/my-new-post/">2015-04-14</a></time></p>
-                        </div>
-                    
-                </div>
-            </div>    
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
+      <time datetime="2015-04-16T08:36:28.000Z" itemprop="datePublished">
+          2015-04-16
+      </time>
+    
+    
+    | 
+    <a href='/tags/123-123/'>123 123</a>
+    
+    
+</span>
+                <h1>MarkDown 常用规则</h1>
+            </div>
         </div>
-    </div>
-</section> 
+        <div class="col-md-8 col-md-offset-2">
+      		<h1 id="前言">前言</h1><p>写blog主要需要用到MarkDown，所以必须进行熟悉，以下终结一些自己常用的语句规则，方便日后查看，因为会不断用到新的格式，所以也会不定时地更新</p>
+<p><br><br><br><br><br></p>
+<hr>
+<h4 id="1-标题">1.标题</h4><pre><code><span class="preprocessor"># 一级标题</span>
+<span class="preprocessor">## 二级标题</span>
+<span class="preprocessor">### 三级标题</span>
+<span class="preprocessor">#### 四级标题</span>
+<span class="preprocessor">##### 五级标题</span>
+<span class="preprocessor">###### 六级标题</span>
 
-<section id="statement">
-    <div class="container text-center wow fadeInUp" data-wow-delay="0.5s">
-        <div class="row">
-            <p>虽然还没想好写点什么，但是总觉得这里放句话比较和谐。</p>
+大标题可以直接在下面加=
+=
+
+小标题加-
+-
+</code></pre><h6 id="效果：">效果：</h6><h1 id="一级标题">一级标题</h1><h2 id="二级标题">二级标题</h2><h3 id="三级标题">三级标题</h3><h4 id="四级标题">四级标题</h4><h5 id="五级标题">五级标题</h5><h6 id="六级标题">六级标题</h6><p>大标题可以直接在下面加=<br>=</p>
+<p>小标题加-<br>-</p>
+<p><br><br><br><br><br></p>
+<hr>
+<h4 id="2-段落">2.段落</h4><pre><code>单个回车
+视为空格
+
+连续回车
+
+才能分段
+
+行尾加两个空格，这里-&gt;  即可段内换行。
+
+<span class="keyword">*</span>这些文字显示为斜体<span class="keyword">*</span>
+
+<span class="keyword">*</span><span class="keyword">*</span>这些文字显示为粗体<span class="keyword">*</span><span class="keyword">*</span>
+</code></pre><h6 id="效果：-1">效果：</h6><p>单个回车<br>视为空格</p>
+<p>连续回车</p>
+<p>才能分段</p>
+<p>行尾加两个空格，再回车<br>即可段内换行。</p>
+<p><em>这些文字显示为斜体</em></p>
+<p><strong>这些文字显示为粗体</strong></p>
+<p><br><br><br><br><br></p>
+<hr>
+<h4 id="3-代码">3.代码</h4><pre><code>行的开头空<span class="number">4</span>个空格，或者tab,表示程序代码
+
+C<span class="preprocessor">#:</span>
+
+<span class="comment">//这里显示一些代码，在正文显示中会自动识别语言，进行代码染色，这是一段C#代码</span>
+<span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Blog</span>
+{
+     <span class="keyword">public</span> <span class="keyword">int</span> Id { <span class="keyword">get</span>; <span class="keyword">set</span>; }
+     <span class="keyword">public</span> <span class="keyword">string</span> Subject { <span class="keyword">get</span>; <span class="keyword">set</span>; }
+}
+</code></pre><h6 id="效果：-2">效果：</h6><p>C#:</p>
+<pre><code><span class="comment">//这里显示一些代码，在正文显示中会自动识别语言，进行代码染色，这是一段C#代码</span>
+<span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Blog</span>
+{
+     <span class="keyword">public</span> <span class="keyword">int</span> Id { <span class="keyword">get</span>; <span class="keyword">set</span>; }
+     <span class="keyword">public</span> <span class="keyword">string</span> Subject { <span class="keyword">get</span>; <span class="keyword">set</span>; }
+}
+</code></pre><p><br><br><br><br><br></p>
+<hr>
+<h4 id="4-项目">4.项目</h4><pre><code>-<span class="ruby">--
+</span>上面是一条分隔线
+
+
+-<span class="ruby"> 这是无序列表项目
+</span>-<span class="ruby"> 这是无序列表项目
+</span>-<span class="ruby"> 这是无序列表项目
+</span>
+两个列表之间不能相邻，否则会解释为嵌套的列表
+
+1. 这是有序列表项目
+2. 这是有序列表项目
+3. 这是有序列表项目
+
+下面这个是嵌套的列表
+
+-<span class="ruby"> 外层列表项目
+</span> + 内层列表项目
+  + 内层无序列表项目
+ + 内层列表项目
+-<span class="ruby"> 外层列表项目</span>
+</code></pre><h6 id="效果：-3">效果：</h6><hr>
+<p>上面是一条分隔线</p>
+<ul>
+<li>这是无序列表项目</li>
+<li>这是无序列表项目</li>
+<li>这是无序列表项目</li>
+</ul>
+<p>两个列表之间不能相邻，否则会解释为嵌套的列表</p>
+<ol>
+<li>这是有序列表项目</li>
+<li>这是有序列表项目</li>
+<li>这是有序列表项目</li>
+</ol>
+<p>下面这个是嵌套的列表，即二级里面前面多加两个空格</p>
+<ul>
+<li>外层列表项目<ul>
+<li>内层列表项目</li>
+<li>内层无序列表项目</li>
+<li>内层列表项目</li>
+</ul>
+</li>
+<li>外层列表项目</li>
+</ul>
+<p><br><br><br><br><br></p>
+<hr>
+<h4 id="5-链接图片">5.链接图片</h4><pre><code>直接把一个URL显示为超级连接：
+
+也可以这样：[<span class="link_label">百度</span>](<span class="link_url">http://www.baidu.com</span>)
+
+图像和链接非常类似，区别在开头加一个惊叹号： ![<span class="link_label">这是一个Logo图    像</span>](<span class="link_url">https://www.baidu.com/img/bd_logo1.png</span>)
+
+此外，还可以以索引方式把url都列在文章的最后，例如这样：
+
+[<span class="link_label">百度</span>][<span class="link_reference">1</span>]
+![<span class="link_label">百度Logo</span>][<span class="link_reference">2</span>]
+
+[<span class="link_reference">1</span>]:<span class="link_url">http://www.baidu.com</span>
+[<span class="link_reference">2</span>]:<span class="link_url">https://www.baidu.com/img/bd_logo1.png</span>
+</code></pre><h6 id="效果：-4">效果：</h6><p>直接把一个URL显示为超级连接：</p>
+<p>也可以这样：<a href="http://www.baidu.com" target="_blank" rel="external">百度</a></p>
+<p>图像和链接非常类似，区别在开头加一个惊叹号： <img src="https://www.baidu.com/img/bd_logo1.png" alt="这是一个Logo图    像"></p>
+<p>此外，还可以以索引方式把url都列在文章的最后，例如这样：</p>
+<p><a href="http://www.baidu.com" target="_blank" rel="external">百度</a><br><img src="https://www.baidu.com/img/bd_logo1.png" alt="百度Logo"></p>
+
+            <div class="clearfix"></div>
+            <hr class="nogutter">
         </div>
+        <nav class="pagination" role="pagination">
+    
+    
+</nav>
+
+        <div class="duoshuo">
+<div class="ds-thread" data-thread-key="2015/04/16/MarkDown 常用规则/" data-title="MarkDown 常用规则" data-url="http://yoursite.com/2015/04/16/MarkDown 常用规则/"></div>
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"bossyao168"};
+(function() {
+	var ds = document.createElement('script');
+	ds.type = 'text/javascript';ds.async = true;
+	ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+	ds.charset = 'UTF-8';
+	(document.getElementsByTagName('head')[0] 
+	 || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+</script>
+</div>
     </div>
 </section>
+
+
       
 <!-- ============================ Footer =========================== -->
 
